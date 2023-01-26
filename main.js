@@ -25,8 +25,6 @@ app.innerHTML = container
 
 const insertTask = (event) =>{
 
-  console.log('foi')
-
   event.preventDefault()
 
   const list = document.getElementById('list__items')
