@@ -12,5 +12,10 @@ const finishTask = (event) => {
     const doneButton = event.target
     const finishedTask = doneButton.parentElement
     finishedTask.classList.toggle('done')
+    if(doneButton.innerText == "Done"){
+        doneButton.innerText = 'Undo'
+    } else{
+        doneButton.innerText = 'Done'
+    }
 }
 
