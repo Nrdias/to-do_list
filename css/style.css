@@ -1,3 +1,54 @@
-button {
+ul {
+    list-style: none;
+}
+
+.done p {
+    text-decoration: line-through;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.content {
+    flex-grow: 1;
+}
+
+.item .task__button {
+    margin: 5px;
+    height: 2em;
     border: none;
+    background: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.task__button:hover {
+    box-shadow: 0 0 5px grey;
+}
+
+#app {
+    height: 100vh;
+    width: ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    text-align: center;
+}
+
+.list {
+    height: 20vh;
+    overflow-y: auto;
+}
+
+#list__items {
+    margin: 0 auto;
+    padding: 10px;
+    text-align: left;
 }
