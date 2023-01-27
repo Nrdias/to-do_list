@@ -9,7 +9,7 @@ const container =
 `
 <div class="form">
   <h1>To-do List</h1>
-  <form action="">
+  <form class= "form__insert" action="">
    <input id="form__input" type="text" placeholder="Describe the task here..."></input>
    <button id="form__button">Add Task</button> 
   </form>
