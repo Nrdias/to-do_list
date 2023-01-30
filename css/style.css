@@ -1,3 +1,7 @@
+body{
+    margin: 0 auto;
+}
+
 ul {
     list-style: none;
 }
@@ -11,8 +15,13 @@ ul {
     align-items: center;
     justify-content: flex-end;
     height: 2.5rem;
-    border: 1px solid;
+    /* border-bottom: 1px solid black; */
     padding: 0;
+    padding-left: 5px;
+    margin-bottom: 7px;
+    background: rgba(255, 175, 80, 0.5);
+    box-shadow: 0 3px 7px rgb(236, 126, 24);
+    /* border-radius: 5px; */
 }
 
 .content {
@@ -22,7 +31,6 @@ ul {
 .item .task__button {
     margin-right: 1.5%;
     height: 2em;
-    border: none;
     background: none;
     cursor: pointer;
     border-radius: 5px;
@@ -31,15 +39,18 @@ ul {
 }
 
 .task__button:hover {
-    box-shadow: 0 3px 10px grey;
+    box-shadow: 0 3px 10px #BC70A4;
     scale: 1.1;
 }
 
 .task__button:active {
     scale: 0.9;
+    background-color: #BFD641;
 }
 
 #app {
+    margin: 0 auto;
+    padding: 0;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -60,13 +71,15 @@ ul {
 }
 
 .form {
+    padding: 15px;
     height: 50vh;
     width: 40vh;
     display: flex;
     flex-direction: column;
-    border: 1px solid #000;
-    background: rgba(255, 175, 80, 0.3);
+    /* border: 1px solid #000; */
+    background: rgba(255, 175, 80, 0.5);
     border-radius: 10px;
+    box-shadow: 0 3px 30px rgb(236, 126, 24);
 }
 
 
@@ -82,15 +95,34 @@ ul {
     justify-content: space-around;
 }
 
-
-
 form #form__input {
-
     border: none;
     opacity: 0.3;
     height: 1.5rem;
     border-radius: 5px;
     flex-grow: 1;
     margin-left: 5px;
-    margin-right: 5px;
+    margin-right: 10px;
+    box-shadow: 0 3px 30px 10px #BC70A4;
+}
+
+#form__button{
+    margin-right: 1.5%;
+    height: 2em;
+    background: none;
+    cursor: pointer;
+    border-radius: 5px;
+    border:none;
+    text-align: center;
+    box-shadow: 1px 3px 7px 1px #BC70A4;
+}
+
+#form__button:hover{
+    box-shadow: 0 3px 10px #BC70A4;
+    scale: 1.1;
+}
+
+#form__button:active {
+    scale: 0.9;
+    background-color: #BFD641;
 }
