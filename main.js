@@ -3,8 +3,6 @@ import { DeleteButton } from "./components/DeleteButton";
 
 // Estrutura Base
 const app = document.getElementById('app');
-
-
 const container = 
 `
 <div class="form">
